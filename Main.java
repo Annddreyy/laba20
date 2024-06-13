@@ -20,7 +20,9 @@ class Main
 
 class MathOperator {
     private static MathOperator operator = new MathOperator();
-    private static MathOperator getInstance() {
+    private MathOperator(){
+    }
+    public static MathOperator getInstance() {
         return operator;
     }
     public double operation(double x, double y) {
